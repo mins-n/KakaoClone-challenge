@@ -7,9 +7,7 @@
     <title>Welcome to Kokoa Talk</title>
 </head>
 <body>
-    
-
-   
+    <img class="main-img" src="screenshots/snowhome.png">
     <div class="status-bar">
     <div class="status-bar__column">
         <span>No Service</span>
@@ -33,13 +31,22 @@
     </header>
   <!--get url에 정보 보냄 post 백엔드 서버에 정보보냄-->
     <form action="friends.html" method="get" id="login-form">
-        <input name="username" type="text" placeholder="Email or phone number" />
-        <input name="password" type="password" placeholder="Password" />
+        <input name="username" type="text" placeholder="Email or phone number" required />
+        <input name="password" type="password" placeholder="Password"  required minlength="6"/>
         <input type="submit" value="Log In" />
         <a href="#">Find Kakao account or Password</a>     
         </form>
-
-       <script src="https://kit.fontawesome.com/cdfb69b7a2.js" crossorigin="anonymous">
-        </script> 
+        <div id="no-mobile">
+            <img src="screenshots/no-mobile.jpg">
+            <i class="fas fa-arrow-right"></i>
+            <div class="no-mobile__text-box">
+              <h1>화면 크기를 줄여주세요!!!</h1>
+            <h2>Please reduce the screen size!!!</h2>
+          </div>
+            <span></span>
+            <i class="fas fa-arrow-left"></i>
+          </div>
+    <script src="https://kit.fontawesome.com/cdfb69b7a2.js" crossorigin="anonymous">
+    </script> 
 </body>
 </html>
